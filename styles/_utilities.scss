@@ -1,0 +1,102 @@
+@import "queries";
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    min-width: 135px;
+    padding: 20px 32px;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.btn-outline {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+
+    &:hover {
+        border-color: #ccc;
+        color: #fff;
+        opacity: 1;
+    }
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.legal-text {
+    font-size: 10px;
+    color: #ccc;
+    text-align: center;
+    // margin-top: 20px;
+}
+
+.sub-link {
+    display: block;
+    text-decoration: underline;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.text-xl {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4;
+
+    @include mobile() {
+        font-size: 36px;
+    }
+}
+
+.sub-text {
+    max-width: 850px;
+    margin-bottom: 24px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.4;
+    
+    @include mobile() {
+        font-size: 18px;
+    }
+}
+
+.form-control {
+    margin: 20px 0;
+
+    label {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    input {
+        width: 100%;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 15px 20px;
+    }
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
